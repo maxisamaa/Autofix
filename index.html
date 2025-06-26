@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Centro de Reparaciones</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>Centro de Reparaciones</h1>
+
+  <h2>Servicio y precios</h2>
+
+  <div class="imagenes">
+    <img src="img/aceite.png" alt="Servicio1">
+    <img src="img/frenos.png" alt="Servicio 2">
+    <img src="img/diagnóstico.png" alt="Servicio 3">
+  </div>
+
+  <h2>Solicitar Reparación</h2>
+
+  <form>
+    <label for="nombre">Nombre del Cliente</label>
+    <input type="text" id="nombre" name="nombre">
+
+    <label for="tipo">Tipo de reparación</label>
+    <select id="tipo" name="tipo">
+      <option selected disabled>Selecciona un servicio</option>
+      <option>Cambio de aceite</option>
+      <option>Revisión de frenos</option>
+      <option>Diagnóstico eléctrico</option>
+    </select>
+
+    <label for="descripcion">Descripción</label>
+    <textarea id="descripcion" name="descripcion" placeholder="Describe..."></textarea>
+
+    <label for="fecha">Agendar cita</label>
+    <input type="date" id="fecha" name="fecha">
+
+    <h2>Información de pago (simulado)</h2>
+
+    <label for="tarjeta">Número de tarjeta</label>
+    <input type="text" id="tarjeta" name="tarjeta">
+
+    <label for="titular">Nombre del titular</label>
+    <input type="text" id="titular" name="titular">
+
+    <label for="cvv">CVV</label>
+    <input type="number" id="cvv" name="cvv" maxlength="3">
+
+    <button type="submit">Confirmar solicitud</button>
+  </form>
+
+</body>
+</html>
